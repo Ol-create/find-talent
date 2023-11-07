@@ -11,34 +11,44 @@ export default function SignUp() {
         </a>
       </div>
       {/* <div className="flex justify-center"> */}
-      <div className="w-full h-99 bg-gray-200 border border-gray-700">
-        <h1 className="text-center w-full text-2xl md:text-4xl pt-4 md:pt-6 h-24 ">
+      <div className="w-full md:w-[65%]  mx-auto md:rounded-2xl border border-gray-700">
+        <h1 className="text-center w-full text-2xl md:text-4xl pt-4 md:py-6 min-h-24 ">
           Join as a client or <br className="sm:hidden" />
           freelancer
         </h1>
-        <div className="border border-gray-400 rounded-lg w-[90%] mx-auto h-32 mb-6">
-          <div className="flex justify-between ">
-            <img src={logo} alt="logo" className="w-12 h-10 m-5 block" />
-            <div className="m-2 border-2 border-gray-400 h-5 w-5 rounded-full flex justify-center items-center">
-              <div className="rounded-full bg-red-600 h-3 w-3"></div>
+        <div className="md:grid grid-cols-2  space-y-4">
+          <div className="border border-gray-400 rounded-lg w-[70%] mx-auto min-h-32">
+            <div className="flex justify-between relative">
+              <img src={logo} alt="logo" className="w-12 h-10 m-5 block" />
+              <input
+                type="radio"
+                name="sign-in-type"
+                className="form-radio border-2 border-green-600 h-5 w-5 absolute top-2 right-2"
+              />
             </div>
+            <p className="pl-2 text-lg min-h-max">
+              I’m a client, hiring for a project 
+            </p>
           </div>
-          <p className="pl-2 text-lg">I’m a client, hiring for a project</p>
-        </div>
-        <div className="border border-gray-400 rounded-lg w-[90%] mx-auto h-32">
-          <div className="flex justify-between ">
-            <img src={wp} alt="logo" className="w-12 h-10 m-5 block" />
-            <div className="m-2 border-2 border-gray-400 h-5 w-5 rounded-full flex justify-center items-center">
-              <div className="rounded-full bg-red-600 h-3 w-3"></div>
+          <div className="border border-gray-400 rounded-lg w-[70%] mx-auto min-h-32">
+            <div className="flex justify-between relative">
+              <img src={wp} alt="logo" className="w-12 h-10 m-5 block" />
+              <input
+                type="radio"
+                name="sign-in-type"
+                className="form-radio border-2 border-green-600 h-5 w-5 absolute top-2 right-2"
+              />
             </div>
+            <p className="pl-2 mb-2 text-lg">
+              I’m a freelancer, looking for work
+            </p>
           </div>
-          <p className="pl-2 text-lg">I’m a freelancer, looking for work</p>
         </div>
-        <div className="w-[90%] mx-auto my-9">
+        <div className="flex justify-center mx-auto w-[90%] my-9">
           <button
             type="submit"
             disabled={true}
-            className="rounded-full bg-gray-300 cursor-not-allowed text-gray-500 w-full h-9"
+            className="rounded-full bg-gray-300 cursor-not-allowed text-gray-500 w-full md:w-[60%] h-9"
           >
             Create Account
           </button>
@@ -50,7 +60,6 @@ export default function SignUp() {
           </a>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 }

@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Home from "./components/Home";
 import Enterprise from "./components/Enterprise";
 import SignUp from "./components/SignUp";
+import Testing from "./components/Testing";
 
 export default function app() {
   return (
@@ -14,6 +15,7 @@ export default function app() {
         <Route path="/enterprise" element={<Enterprise />} />
       </Routes> */}
       <SignUp />
+      {/* <Testing /> */}
     </div>
   );
 }
