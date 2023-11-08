@@ -38,7 +38,7 @@ export default function Login() {
           <p className="mx-2">or</p>
           <hr className="my-4 border-t-2 w-[45%] border-gray-300 block" />
         </div>
-        {/* Name fields (first & last) */}
+        {/*  START: Name fields (first & last) */}
         <div className="mb-4 lg:space-x-4 mx-6 lg:mx-0 space-y-4 lg:space-y-0 lg:flex justify-center  items-center bg-red-500">
           <input
             type="text"
@@ -51,6 +51,15 @@ export default function Login() {
             className=" block border border-gray-200 focus:outline-gray-300 rounded-lg w-full lg:w-[45%] h-9 pl-5"
           />
         </div>
+        {/* END: Name fields (first & last) */}
+
+        {/* Email address input */}
+        <input
+            type="text"
+            placeholder="Work email address"
+            className=" block border border-gray-200 focus:outline-gray-300 rounded-lg w-[92%] mx-auto mb-4 h-9 pl-5"
+        />
+        
       </div>
     </div>
   );
