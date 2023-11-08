@@ -10,7 +10,7 @@ import seo from '../images/seo.webp'
 export default function NavFindTalent({display, onMouse, mouseLeave}) {
     let classes = "space-x-32 p-8 hidden";
     if (display) {
-        classes = "flex space-x-16 p-8 border-x-2 bg-gray-200 rounded-md border-green ";
+        classes = "flex space-x-16 p-8 border-x-2 rounded-md border-green ";
     }
   return (
     <div class={classes} onMouseEnter={onMouse} onMouseLeave={mouseLeave}>
@@ -51,7 +51,7 @@ export default function NavFindTalent({display, onMouse, mouseLeave}) {
         </div> */}
         <a href="">
           <div className="hover:bg-gray-200 rounded-lg pl-6 py-6 pr-56 flex-1 relative">
-            <p className="">
+            <p className="max-w-[300px] bg-red-400">
               Get advice from industrial expert <br />
               <span className="text-green-700">Consultation</span>
             </p>

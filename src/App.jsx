@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Enterprise from "./components/Enterprise";
 import SignUp from "./components/SignUp";
 import Testing from "./components/Testing";
+import Login from "./components/Login";
 
 export default function app() {
   return (
@@ -14,7 +15,7 @@ export default function app() {
         <Route path="/" element={<Home />} />
         <Route path="/enterprise" element={<Enterprise />} />
       </Routes> */}
-      <SignUp />
+      <Login />
       {/* <Testing /> */}
     </div>
   );
