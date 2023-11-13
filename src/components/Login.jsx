@@ -1,6 +1,7 @@
 import React from 'react'
 import apple from "../images/apple-logo.png";
 import google from "../images/google-icon.png";
+import visible_off from "../images/visibility_off.png"
 
 export default function Login() {
   return (
@@ -55,11 +56,20 @@ export default function Login() {
 
         {/* Email address input */}
         <input
-            type="text"
-            placeholder="Work email address"
-            className=" block border border-gray-200 focus:outline-gray-300 rounded-lg w-[92%] mx-auto mb-4 h-9 pl-5"
+          type="text"
+          placeholder="Work email address"
+          className=" block border border-gray-200 focus:outline-gray-300 rounded-lg w-[92%] mx-auto mb-4 h-9 pl-5"
         />
-        
+
+        {/* Password input */}
+        <div className='flex'>
+          <input
+            type="text"
+            placeholder="Password (8 0r more characters)"
+            className=" block border border-gray-200 focus:outline-gray-300 rounded-lg w-[92%] mx-auto mb-4 h-9 pl-5"
+          />
+          <img src={visible_off} alt="visibility_off" />
+        </div>
       </div>
     </div>
   );

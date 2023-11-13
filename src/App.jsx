@@ -1,22 +1,27 @@
 import React from "react";
 import {Routes, Route} from 'react-router-dom'
-import NavBar from "./components/NavBar";
-import Home from "./components/Home";
 import Enterprise from "./components/Enterprise";
+import Home from "./components/Home";
+import Login from "./components/Login";
+import NavBar from "./components/NavBar";
+import { Select } from "./components/Select";
 import SignUp from "./components/SignUp";
 import Testing from "./components/Testing";
-import Login from "./components/Login";
+
 
 export default function app() {
   return (
     <div>
-      {/* <NavBar /> */}
+      <NavBar />
+      <Home />
+
       {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/enterprise" element={<Enterprise />} />
       </Routes> */}
-      <Login />
+      {/* <Login /> */}
       {/* <Testing /> */}
+      {/* <Select /> */}
     </div>
   );
 }
