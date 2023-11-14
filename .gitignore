@@ -2,6 +2,7 @@
 
 #Components
 /src/components/Testing.jsx
+/src/components/Test2.jsx
 /src/components/Select.jsx
 /src/components/uuid.jsx
 /src/components/classNames.jsx
