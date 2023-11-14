@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function WhyUpwork() {
   return (
-    <div className="grid grid-cols-4 gap-3 pt-20 px-7">
+    // <div className="grid grid-cols-4 gap-3 pt-20 px-7">
+    <div className='hidden'>
       <div>
         <a href="">
           <div className="hover:bg-gray-300 rounded-md p-7 w-80">

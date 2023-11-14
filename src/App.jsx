@@ -11,7 +11,7 @@ import Testing from "./components/Testing";
 
 export default function app() {
   return (
-    <div>
+    <div className="bg-red-600 container mx-auto">
       <NavBar />
       <Home />
 
