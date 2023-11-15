@@ -11,8 +11,8 @@ import Testing from "./components/Testing";
 
 export default function app() {
   return (
-    <div className="bg-red-600 container mx-auto">
-      <NavBar />
+    <div >
+      {/* <NavBar /> */}
       <Home />
 
       {/* <Routes>

@@ -5,6 +5,8 @@ import display_advert from "../images/Upwork _ images/display_home.png";
 import microsoft from "../images/Upwork _ images/supported_by/microsoft.svg";
 import bissell from "../images/Upwork _ images/supported_by/bissell.svg";
 import icon from "../images/google-icon.png"
+import enterprise_md from "../images/Upwork _ images/enterprise-md.jpg"
+import enterprise_sm from "../images/Upwork _ images/enterprise-sm.jpg"
 
 export default function Home() {
   return (
@@ -73,103 +75,125 @@ export default function Home() {
           Browse jobs
         </a>
       </p>
-      <div className='grid md:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-2'>
+      <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-2">
         <div className="bg-gray-200 rounded-md p-2">
           <h3 className="text-xl">Development & IT</h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.85/5</span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.85/5</span>
             </p>
             <p className="">1853 skills</p>
-          </p>
+          </div>
         </div>
         <div className="bg-gray-200 rounded-md p-2">
           <h3 className="text-xl">AI Services </h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.8/5 </span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.8/5 </span>
             </p>
             <p className="">294 skills</p>
-          </p>
+          </div>
         </div>
         <div className="bg-gray-200 rounded-md p-2">
           <h3 className="text-xl">Design & Creative </h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.91/5 </span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.91/5 </span>
             </p>
             <p className="">968 skills</p>
-          </p>
+          </div>
         </div>
         <div className="bg-gray-200 rounded-md p-2">
           <h3 className="text-xl">Sales & Marketing </h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.77/5 </span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.77/5 </span>
             </p>
             <p className="">392 skills</p>
-          </p>
+          </div>
         </div>
         <div className="bg-gray-200 rounded-md p-2">
           <h3 className="text-xl">Writing & Translation </h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.92/5 </span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.92/5 </span>
             </p>
             <p className="">505 skills</p>
-          </p>
+          </div>
         </div>
         <div className="bg-gray-200 rounded-md p-2">
           <h3 className="text-xl">Admin & Customer Support </h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.77/5 </span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.77/5 </span>
             </p>
             <p className="">508 skills</p>
-          </p>
+          </div>
         </div>
         <div className="bg-gray-200 rounded-md p-2">
           <h3 className="text-xl">Finance & Accounting </h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.79/5 </span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.79/5 </span>
             </p>
             <p className="">214 skills</p>
-          </p>
+          </div>
         </div>
         <div className="bg-gray-200 mt-2 rounded-md p-2">
           <h3 className="text-xl">Engineering & Architecture</h3>
-          <p className="flex space-x-3 items-center">
-            <p className="bg-red-300 flex items-center">
-              <span className="material-icons text-green-600 bg-yellow-400">
-                star
-              </span>
-              <span className="bg-green-300">4.85/5 </span>
+          <div className="flex space-x-3 items-center">
+            <p className="flex items-center">
+              <span className="material-icons text-green-600">star</span>
+              <span className="">4.85/5 </span>
             </p>
             <p className="">650 skills</p>
-          </p>
+          </div>
         </div>
+      </div>
+      {/* Find talent image  and text*/}
+      <div className="grid lg:grid-cols-5">
+        <img className="sm:hidden" src={enterprise_sm} alt="" />
+        {/* Text container */}
+        <div className="bg-green-800 lg:col-span-3 pl-7">
+          <h3>Enterprise Suite</h3>
+          <h2>
+            <span>This is how</span> <br />
+            good companies <br />
+            find good company.
+          </h2>
+          <p>
+            Access the top 1% of talent on Upwork, and a full suite of hybrid
+            workforce management tools. This is how innovation works now.
+          </p>
+          <div className="flex space-x-2">
+            <span className="material-icons text-gray-400 ">
+              design_services
+            </span>
+            <p className="text-gray-200">
+              Access expert talent to fill your skill gaps
+            </p>
+          </div>
+          <div>
+            <span className="material-icons-outlined">business_center</span>
+            <p>Control your workflow: hire, classify and pay your talent</p>
+          </div>
+          <div>
+            <span className="material-icons-outlined">headset_mic</span>
+            <p>Partner with Upwork for end-to-end support</p>
+          </div>
+        </div>
+        <img
+          className="hidden lg:block col-span-2 object-cover"
+          src={enterprise_md}
+          alt=""
+        />
       </div>
     </div>
   );

@@ -28,6 +28,7 @@ export default function NavBar() {
               <a href="/">Upwork</a>
             </li>
             <li
+          
               className="hover:text-green-600 hover:cursor-pointer h-full flex"
               onMouseEnter={handleOnMouseOver}
               onMouseLeave={handleOnMouseLeave}
