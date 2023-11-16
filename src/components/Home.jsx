@@ -162,30 +162,32 @@ export default function Home() {
         <img className="sm:hidden" src={enterprise_sm} alt="" />
         {/* Text container */}
         <div className="bg-[#1e3e19] lg:col-span-3 pl-7">
-          <h3 className='my-7'>Enterprise Suite</h3>
+          <h3 className="my-7">Enterprise Suite</h3>
           <h2 className="text-6xl mb-5 text-[#91E683] text ">
             <span className="text-white text-[1em]">This is how</span> <br />
             good companies <br />
             find good company.
           </h2>
-          <p className='text-white pr-24 '>
+          <p className="text-white pr-24 mb-3">
             Access the top 1% of talent on Upwork, and a full suite of hybrid
             workforce management tools. This is how innovation works now.
           </p>
-          <div className="flex space-x-2">
-            <span className="material-icons text-gray-400 ">
+          <div className="flex space-x-2 mb-2">
+            <span className="material-icons text-[#91E683] ">
               design_services
             </span>
             <p className="text-gray-200">
               Access expert talent to fill your skill gaps
             </p>
           </div>
-          <div>
-            <span className="material-icons-outlined">business_center</span>
+          <div className="flex space-x-2 mb-2">
+            <span className="material-icons  text-[#91E683]">
+              business_center
+            </span>
             <p>Control your workflow: hire, classify and pay your talent</p>
           </div>
-          <div>
-            <span className="material-icons-outlined">headset_mic</span>
+          <div className="flex space-x-2 mb-2">
+            <span className="material-icons  text-[#91E683]">headset_mic</span>
             <p>Partner with Upwork for end-to-end support</p>
           </div>
         </div>
