@@ -158,17 +158,17 @@ export default function Home() {
         </div>
       </div>
       {/* Find talent image  and text*/}
-      <div className="grid lg:grid-cols-5">
+      <div className="grid lg:grid-cols-5 text-white mt-10 ">
         <img className="sm:hidden" src={enterprise_sm} alt="" />
         {/* Text container */}
-        <div className="bg-green-800 lg:col-span-3 pl-7">
-          <h3>Enterprise Suite</h3>
-          <h2>
-            <span>This is how</span> <br />
+        <div className="bg-[#1e3e19] lg:col-span-3 pl-7">
+          <h3 className='my-7'>Enterprise Suite</h3>
+          <h2 className="text-6xl mb-5 text-[#91E683] text ">
+            <span className="text-white text-[1em]">This is how</span> <br />
             good companies <br />
             find good company.
           </h2>
-          <p>
+          <p className='text-white pr-24 '>
             Access the top 1% of talent on Upwork, and a full suite of hybrid
             workforce management tools. This is how innovation works now.
           </p>
@@ -190,7 +190,7 @@ export default function Home() {
           </div>
         </div>
         <img
-          className="hidden lg:block col-span-2 object-cover"
+          className="hidden lg:block col-span-2 overflow-hidden object-none object-center h-full"
           src={enterprise_md}
           alt=""
         />
