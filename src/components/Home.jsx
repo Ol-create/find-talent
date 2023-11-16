@@ -162,7 +162,7 @@ export default function Home() {
         <img className="sm:hidden" src={enterprise_sm} alt="" />
         {/* Text container */}
         <div className="bg-[#1e3e19] lg:col-span-3 pl-7">
-          <h3 className="my-7">Enterprise Suite</h3>
+          <h3 className="my-7 text-xl">Enterprise Suite</h3>
           <h2 className="text-6xl mb-5 text-[#91E683] text ">
             <span className="text-white text-[1em]">This is how</span> <br />
             good companies <br />
@@ -189,6 +189,9 @@ export default function Home() {
           <div className="flex space-x-2 mb-2">
             <span className="material-icons  text-[#91E683]">headset_mic</span>
             <p>Partner with Upwork for end-to-end support</p>
+          </div>
+          <div className="bg-gray-100 rounded-full text-[#1e3e19] text-lg text-center px-6 py-2 my-5 w-40">
+            <a href="">Learn more</a>
           </div>
         </div>
         <img
