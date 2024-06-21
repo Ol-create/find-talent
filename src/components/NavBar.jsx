@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import NavFindTalent from "../common/NavFindTalent";
 import NavFindWork from "../common/NavFindWork";
 import WhyUpwork from "../common/WhyUpwork";
@@ -25,7 +26,7 @@ export default function NavBar() {
         <div>
           <ul className="flex space-x-4 items-center h-full pr-3 pt-2">
             <li className="text-green-600 h-full">
-              <a href="/">Upwork</a>
+              <Link to="/">Upwork</Link>
             </li>
             <li
           
@@ -37,7 +38,7 @@ export default function NavBar() {
               {/* <span className="material-icons flex transform hover:rotate-180 bg-gray-400 bg- ">
                 expand_more
               </span> */}
-            </li>
+            </li> 
             <li className="hover:text-green-600 hover:cursor-pointer h-full flex">
               Find Work <span className="material-icons ">expand_more</span>
             </li>
@@ -45,7 +46,7 @@ export default function NavBar() {
               Why Upwork <span className="material-icons">expand_more</span>
             </li>
             <li className="h-full hover:text-green-600">
-              <a href="/enterprise">Enterprise</a>
+              <Link to="/enterprise">Enterprise</Link>
             </li>
           </ul>
         </div>

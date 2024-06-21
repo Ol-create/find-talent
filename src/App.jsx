@@ -1,27 +1,22 @@
 import React from "react";
-import {Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Enterprise from "./components/Enterprise";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import NavBar from "./components/NavBar";
-import { Select } from "./components/Select";
-import SignUp from "./components/SignUp";
-import Testing from "./components/Testing";
 
+import SignUp from "./components/SignUp";
 
 export default function app() {
   return (
-    <div >
-      {/* <NavBar /> */}
-      <Home />
-
-      {/* <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/enterprise" element={<Enterprise />} />
-      </Routes> */}
-      {/* <Login /> */}
-      {/* <Testing /> */}
-      {/* <Select /> */}
-    </div>
+    <Router>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/enterprise" element={<Enterprise />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
