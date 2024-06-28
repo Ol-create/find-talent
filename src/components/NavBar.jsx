@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import NavFindTalent from "../common/NavFindTalent";
 import NavFindWork from "../common/NavFindWork";
 import WhyUpwork from "../common/WhyUpwork";
@@ -48,7 +48,7 @@ export default function NavBar() {
             <li className="h-full hover:text-green-600">
               <Link to="/enterprise">Enterprise</Link>
             </li>
-          </ul>
+          </ul> 
         </div>
         <div className="flex space-x-5 items-center pb-3">
           <div className="border-solid border-2 border-gray-700 rounded-full py-2 px-8">
@@ -57,7 +57,7 @@ export default function NavBar() {
           </div>
           <span>Log in</span>
           <button className="rounded-full bg-green-600 px-5 py-2 text-white">
-            Sign in
+            <Link to="/signup">Sign up</Link>
           </button>
         </div>
       </div>
