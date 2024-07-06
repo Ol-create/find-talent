@@ -22,7 +22,7 @@ export default function SignUp() {
           freelancer
         </h1>
         <div className="md:grid grid-cols-2  space-x-0 ml-12">
-          <div className={`"border-2 border-gray-400 rounded-lg w-[70%] mx-auto h-56 hover:cursor-pointer hover:bg-gray-100 hover:border-green-600 ${person == 'client' ? 'border-green-600 bg-gray-100' : ""}`}
+          <div className={`border-2 border-gray-200 rounded-lg w-[70%] mx-auto h-56 hover:cursor-pointer hover:bg-gray-100 hover:border-green-600 ${person == 'client' ? 'border-green-600 bg-gray-100' : ""}`}
                onClick={() => handleSeletPerson('client')}
                >
             <div className="flex justify-between relative">
@@ -40,7 +40,7 @@ export default function SignUp() {
               project 
             </p>
           </div>
-          <div className={`"border-2 border-gray-400 rounded-lg w-[70%] mx-auto h-56 hover:cursor-pointer hover:bg-gray-100 hover:border-green-600 ${person == 'freelancer' ? 'border-green-600 bg-gray-100' : ""}`}
+          <div className={`border-2 border-gray-200 rounded-lg w-[70%] mx-auto h-56 hover:cursor-pointer hover:bg-gray-100 hover:border-green-600 ${person == 'freelancer' ? 'border-green-600 bg-gray-100' : ""}`}
                onClick={() => handleSeletPerson('freelancer')}>
             <div className="flex justify-between relative">
               <img src={wp} alt="logo" className="w-4 h-4 m-5 block" />
@@ -60,16 +60,16 @@ export default function SignUp() {
             </p>
           </div>
         </div>
-        <div className="flex justify-center mx-auto w-[90%] my-9">
+        <div className="flex justify-center mx-auto w-[90%] mt-9">
           <button
             type="submit"
             disabled={true}
-            className={`rounded-xl py-5 px-6 justify-center text-center font-bold items-center inline-flex  h-9 ${!person ? 'cursor-not-allowed bg-gray-300  text-gray-500' : "bg-green-700 text-white"}` }
+            className={`rounded-xl py-5 px-6 justify-center text-center font-bold items-center inline-flex  h-9 ${!person ? 'cursor-not-allowed bg-gray-300  text-gray-500' : "bg-green-700 text-white cursor-pointer"}` }
           >
             {person == 'client'? "Join as a Client": person == 'freelancer'? "Apply as a Freelancer": "Create Account"}
           </button>
         </div>
-        <div className="flex justify-center my-4">
+        <div className="flex justify-center mt-2">
           <p>Already have an account?</p>
           <a href="" className="text-green-600 ml-1">
             Log In
