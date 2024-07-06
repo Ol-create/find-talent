@@ -1,22 +1,37 @@
 import React from 'react'
 
 import airbnb from "../images/Upwork _ images/supported_by/airbnb.svg"
-import display_advert from "../images/Upwork _ images/display_home.png";
+import display_advert from "../images/advert.gif";
 import microsoft from "../images/Upwork _ images/supported_by/microsoft.svg";
 import bissell from "../images/Upwork _ images/supported_by/bissell.svg";
 import icon from "../images/google-icon.png"
 import enterprise_md from "../images/Upwork _ images/enterprise-md.jpg"
 import enterprise_sm from "../images/Upwork _ images/enterprise-sm.jpg"
+import searchTalent from "../images/searching-talent.webp"
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4">
-      <h1>How work should work</h1>
-      <h3>
-        Forget the old rules. You can have the best people. Right now. Right
-        here.
+    <div className="container mx-auto px-9">
+      <div className='grid grid-cols-2 mt-16'>
+        <div>
+        <h1 className='text-6xl text-black font-semibold'>Highly skilled <br />
+      AI pros</h1>
+      <h3 className='text-gray-500 text-xl font-semibold my-4'>
+      Unleash your business potential <br />
+      by hiring the right expert for your need.
       </h3>
-      <a href="">Get started</a>
+          <button
+            className="rounded-xl py-5 px-6 justify-center text-center font-medium items-center inline-flex  h-9 bg-green-700 hover:bg-green-600 text-white cursor-pointer"
+          > Get started
+          </button>
+
+        </div>
+        <div>
+        <img src={searchTalent} 
+             alt="Search Talent" 
+             className='h-60 w-96 float-right'/>
+        </div>
+      </div>
       <p>Support by</p>
       <div className="ml-3 flex space-x-3 overflow-hidden">
         <img src={microsoft} alt="microsoft logo" />
