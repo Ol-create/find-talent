@@ -77,7 +77,7 @@ export default function SignUp() {
             type="submit"
             disabled={!person}
             onClick={handleSignUpClick}
-            className={`rounded-xl py-5 px-6 justify-center text-center font-bold items-center inline-flex h-9 ${!person ? 'cursor-not-allowed bg-gray-300 text-gray-500' : "bg-green-700 text-white cursor-pointer"}`}
+            className={`rounded-xl py-5 px-6 justify-center text-center font-bold items-center inline-flex h-9 ${!person ? 'cursor-not-allowed bg-gray-300 text-gray-500' : "bg-green-700 hover:bg-green-600 text-white cursor-pointer"}`}
           >
             {person === 'client' ? "Join as a Client" : person === 'freelancer' ? "Apply as a Freelancer" : "Create Account"}
           </button>
