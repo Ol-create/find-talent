@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
+
 import logo from "../images/logo.webp";
 import wp from "../images/wp.webp";
 
 export default function SignUp() {
-  const [person, setPerson] = useState("")
+  
 
   const handleSeletPerson = (person) => {
     setPerson(person)

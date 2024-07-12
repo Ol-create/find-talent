@@ -11,10 +11,10 @@ import searchTalent from "../images/searching-talent.webp"
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-9">
-      <div className='grid grid-cols-2 mt-16'>
+    <div className="contain mx-auto px-9">
+      <div className='grid grid-cols-1 min-[717px]:grid-cols-2 my-16'>
         <div>
-        <h1 className='text-6xl text-black font-semibold'>Highly skilled <br />
+        <h1 className='text-5xl sm:text-7xl text-black font-semibold'>Highly skilled <br />
       AI pros</h1>
       <h3 className='text-gray-500 text-xl font-semibold my-4'>
       Unleash your business potential <br />
@@ -26,17 +26,20 @@ export default function Home() {
           </button>
 
         </div>
-        <div>
+        <div className='hidden min-[717px]:block'>
         <img src={searchTalent} 
              alt="Search Talent" 
-             className='h-60 w-96 float-right'/>
+             className='float-right sm:h-1/2 md:h-3/5 lg:h-3/4 aspect-w-96 aspect-h-60'/>
         </div>
       </div>
-      <p>Support by</p>
-      <div className="ml-3 flex space-x-3 overflow-hidden">
-        <img src={microsoft} alt="microsoft logo" />
-        <img src={airbnb} alt="airbnb logo" />
-        <img src={bissell} alt="bissell logo" />
+      <p className='text-gray-500 mb-3'>Trusted by</p>
+      <div className="flex space-x-9 overflow-hidden">
+        <img src={microsoft} alt="microsoft logo"
+             className='h-12' />
+        <img src={airbnb} alt="airbnb logo" 
+            className='h-12' />
+        <img src={bissell} alt="bissell logo" 
+             className='h-12'/>
       </div>
       <img
         src={display_advert}
@@ -56,7 +59,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex space-x-3">
-          <img src={icon} alt="No cost to join icon" className="w-4 h-4" />
+          <img src={icon} alt="No cost to join icon" className="w-4 h-4 " />
           <div>
             <h3>Post a job and hire top talent</h3>
             <p className="text-xs">
