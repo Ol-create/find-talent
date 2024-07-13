@@ -1,11 +1,12 @@
-import React from 'react'
-import { Apple, Google } from '@mui/icons-material';
-import { Box, Typography } from '@mui/material';
-
+import React, { useState } from 'react'
 import googleIcon from "../images/googleIcon.png"
 import appleIcon from "../images/apple-logo.png"
 
 export default function Register() {
+  const [isChecked, setChecked] = useState(true)
+  const handleChecked = () => {
+    setChecked(!isChecked)
+  }
   return (
     <div>
       <div className='flex justify-between p-6'>
@@ -40,23 +41,40 @@ export default function Register() {
     <input type="text" className='border-2 w-full rounded-md h-9 hover:border-gray-300 focus:border-gray-400 outline-none' />
     </div>
   </div>
-  <div>
+  <div className='mt-6'>
     <label htmlFor="email">Email</label> <br />
-    <input type="email" className='border border-gray-200'/>
+    <input type="email"
+           autoComplete='off' 
+    className=' border-2 w-full rounded-md pl-3 h-9 hover:border-gray-300 focus:border-gray-400 outline-none'/>
   </div>
-  <div>
+  <div className='mt-6'>
     <label htmlFor="password">Password</label> <br />
-    <input type="password" className='border border-gray-200' />
+    <input type="password" 
+    autoComplete='off'
+    placeholder='Password (8 or more characters)'
+    className=' border-2 w-full rounded-md pl-3 h-9 hover:border-gray-300 focus:border-gray-400 outline-none' />
   </div>
+  
+  <div className='mt-6'>
   <p>Country</p>
-  <div className='border border-gray-200'>Nigeria</div>
-  <div>
-  <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600" /> <span>Send me helpful emails to find rewarding work and job leads.</span>
+  <div className='flex justify-between items-center border-2 w-full rounded-md pl-3 h-9 hover:border-gray-300 focus:border-gray-400 outline-none'>
+  <p>Nigeria</p> <span className="material-icons  w-6">expand_more</span>
   </div>
-   <input type="checkbox"  /> <span>
-   Yes, I understand and agree to the Upwork Terms of Service ,<br/> including the User Agreement and Privacy Policy .
-
-   </span>
+  </div>
+  <div className='mt-6 flex space-x-2 items-center'>
+  <input type="checkbox" 
+         checked={isChecked} 
+         onChange={handleChecked}
+  class="form-checkbox h-5 w-5 text-green-500 checked:bg-green-500 checked:border-transparent" /> <span>Send me helpful emails to find rewarding work and job leads.</span>
+  </div>
+   <div className='flex items-start mt-6 space-x-3'><input type="checkbox" 
+          className='h-5 w-5'
+          />
+   <p>Yes, I understand and agree to the Upwork Terms of Service ,<br />
+    including the User Agreement and Privacy Policy .</p>
+ </div>
+ <div className='flex justify-center mt-10'><button className='text-white flex items-center text-lg font-medium h-10 px-8 py-2 bg-green-600 rounded-lg'>Create Account</button></div>
+ <p className='mt-4 mb-24 flex justify-center'><span className='pr-6' >Here to hire talent?</span> <span className='text-green-700 cursor-pointer hover:text-green-500'>Join as a client</span></p>
       </div>
     </div>
    
