@@ -21,7 +21,7 @@ export default function SignUp() {
   return (
     <div>
       <div>
-        <a href="/" className="text-green-700 p-5 block">
+        <a href="/" className="text-green-600 font-bold text-2xl p-5 block">
           Upwork
         </a>
       </div>
