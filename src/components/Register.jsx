@@ -32,11 +32,13 @@ export default function Register() {
     <span class="px-4 text-gray-700">or</span>
     <div class="flex-grow border-t border-gray-300"></div>
   </div>
-  <div className='flex'>
-  <div ><label htmlFor="firstName">First name</label> <br />
-  <input type="text" className='border border-gray-200' /></div>
-  <div><label htmlFor="lastName">Last name</label> <br />
-    <input type="text" className='border border-gray-200' /></div>
+  <div className='flex space-x-6'>
+  <div className='w-full'><label htmlFor="firstName" className=' font-semibold'>First name</label> <br />
+  <input type="text" className='border-2 w-full rounded-md h-9 hover:border-gray-300 focus:border-gray-400 outline-none' />
+  </div>
+  <div className='w-full'><label htmlFor="lastName" className=' font-semibold'>Last name</label> <br />
+    <input type="text" className='border-2 w-full rounded-md h-9 hover:border-gray-300 focus:border-gray-400 outline-none' />
+    </div>
   </div>
   <div>
     <label htmlFor="email">Email</label> <br />
