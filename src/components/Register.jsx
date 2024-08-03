@@ -23,8 +23,8 @@ export default function Register() {
     <img src={appleIcon} alt="apple icon"  className='h-7 inline'/>
         <span>Continue with Apple</span>
       </button>
-      <button className="border rounded-xl h-10 bg-blue-500 w-56 border-gray-700 inline-flex items-center justify-between">
-        <img src={googleIcon} alt="google icon"  className='h-9 w-9 ml-[1px] my-[1px] border-0 rounded-xl'/>
+      <button className="border-0 rounded-xl h-10 bg-blue-500 w-56 border-gray-700 inline-flex items-center justify-between">
+        <img src={googleIcon} alt="google icon"  className='h-9 w-9 ml-[1px] my-[1px] border-0 rounded-xl '/>
         <span className='pr-4 text-white'>Continue with Google</span>
       </button>
      </div>

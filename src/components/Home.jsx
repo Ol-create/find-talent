@@ -12,7 +12,7 @@ import searchTalent from "../images/searching-talent.webp"
 export default function Home() {
   return (
     <div className="contain mx-auto px-9">
-      <div className='grid grid-cols-1 min-[717px]:grid-cols-2 my-16'>
+      <div className='grid grid-cols-1 min-[717px]:grid-cols-2 mt-16 mb-6 h-[320px]'>
         <div>
         <h1 className='text-5xl sm:text-7xl text-black font-semibold'>Highly skilled <br />
       AI pros</h1>
@@ -41,38 +41,46 @@ export default function Home() {
         <img src={bissell} alt="bissell logo" 
              className='h-12'/>
       </div>
+      <div className='md:grid md:grid-cols-5 md:space-x-7 mt-7'>
       <img
         src={display_advert}
         alt="display advert"
-        className="mx-auto w-full max-h-96"
+        className="mx-auto w-full max-h-96 rounded-lg col-span-2"
       />
-      <h2>Up your work game, it’s easy</h2>
-      <div className="px-2">
+      <div className='col-span-3'>
+      <h2 className='text-4xl font-semibold mt-5 md:mt-0'>Up your work game, it’s easy</h2>
+      <div className="px-2 mt-4">
         <div className="flex space-x-3">
-          <img src={icon} alt="No cost to join icon" className="w-4 h-4" />
-          <div>
-            <h3>No cost to join</h3>
+        <span className="material-symbols-outlined text-gray-500 ">
+                 edit_square
+          </span>
+          <div className='bottom-1 relative'>
+            <h3 className='text-lg font-medium'>No cost to join</h3>
             <p className="text-xs">
               Register and browse professionals, explore projects, or even book
               a consultation.
             </p>
           </div>
         </div>
-        <div className="flex space-x-3">
-          <img src={icon} alt="No cost to join icon" className="w-4 h-4 " />
-          <div>
-            <h3>Post a job and hire top talent</h3>
-            <p className="text-xs">
+        <div className="flex space-x-3 mt-5">
+        <span class="material-symbols-outlined text-gray-500">
+          exercise
+</span>
+          <div className='bottom-1 relative'>
+            <h3 className='text-lg font-medium'>Post a job and hire top talent</h3>
+            <p className='text-[14px]'>
               Finding talent doesn’t have to be a chore. Post a job or we can
               search for you!
             </p>
           </div>
         </div>
-        <div className="flex space-x-3">
-          <img src={icon} alt="No cost to join icon" className="w-4 h-4" />
-          <div>
-            <h3>Work with the best—without breaking the bank</h3>
-            <p className="text-xs">
+        <div className="flex space-x-3 mt-5">
+        <span class="material-symbols-outlined text-gray-500">
+workspace_premium
+</span>
+          <div className='relative bottom-1'>
+            <h3 className='text-lg font-medium'>Work with the best—without breaking the bank</h3>
+            <p className="text-[14px]">
               Upwork makes it affordable to up your work and take advantage of
               low transaction rates.
             </p>
@@ -84,8 +92,10 @@ export default function Home() {
         href=""
         className="block border border-green-300 text-center rounded-full mt-3 h-9 py-1 hover:bg-gray-200"
       >
-        Learn hoe to hire
+        Learn how to hire
       </a>
+      </div>
+      </div>
       <h2>Browse talent by category</h2>
       <p>
         Looking for work?{" "}

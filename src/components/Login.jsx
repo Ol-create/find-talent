@@ -15,7 +15,7 @@ export default function Login() {
           <a href="/" className="text-green-700 hidden lg:block">
             Apply as talent
           </a>
-          <a href="" className="pt-5 lg:hidden text-green-700">
+          <a href="/log-in" className="pt-5 lg:hidden text-green-700">
             Log in
           </a>
         </div>
