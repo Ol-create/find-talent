@@ -7,11 +7,12 @@ import social_media from '../images/smm.webp';
 import video_editing from '../images/videoedit.jpg';
 import seo from '../images/seo.webp'
 
-export default function NavFindTalent({display, onMouse, mouseLeave}) {
+export default function NavFindTalent({findTalent, onMouse, mouseLeave}) {
     let classes = "space-x-32 p-8 hidden z-20";
-    if (display) {
+    if (findTalent) {
         classes = "flex space-x-16 p-8 border-x-2 rounded-md border-green z-20";
     }
+    console.log(classes)
   return (
     <div class={classes} onMouseEnter={onMouse} onMouseLeave={mouseLeave}>
       <div className=" border-r border-gray-400 pr-10 w-96">

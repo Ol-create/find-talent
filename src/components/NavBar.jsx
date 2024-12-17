@@ -5,19 +5,27 @@ import NavFindWork from "../common/NavFindWork";
 import WhyUpwork from "../common/WhyUpwork";
 
 export default function NavBar() {
-  const [display, setDisplay] = useState(false);
+  const [findTalent, setFindTalent] = useState(false);
+  const [whyUpwork, setWhyUpwork] = useState(false);
 
   const handleOnMouseOver = () => {
-    setDisplay(true);
+    setFindTalent(true);
   };
 
   const handleOnMouseLeave = () => {
-    setDisplay(false);
+    setFindTalent(false);
+  };
+  const handleOnMouseOverWhyUpwork = () => {
+    setWhyUpwork(true);
+  };
+
+  const handleOnMouseLeaveWhyUpwork = () => {
+    setWhyUpwork(false);
   };
 
   // Translate hover icon
   let icon = <span className="material-icons">expand_more</span>;
-  if (display) {
+  if (findTalent) {
     icon = <span className="material-icons">expand_less</span>;
   }
   return (
@@ -42,7 +50,9 @@ export default function NavBar() {
             <li className="hover:text-green-600 hover:cursor-pointer h-full flex">
               Find Work <span className="material-icons ">expand_more</span>
             </li>
-            <li className="hover:text-green-600 hover:cursor-pointer h-full flex">
+            <li className="hover:text-green-600 hover:cursor-pointer h-full flex"
+                onMouseMove={handleOnMouseOverWhyUpwork}
+                onMouseLeave={handleOnMouseLeaveWhyUpwork}>
               Why Upwork <span className="material-icons">expand_more</span>
             </li>
             <li className="h-full hover:text-green-600">
@@ -55,19 +65,22 @@ export default function NavBar() {
             <input className="outline-none" type="text" placeholder="Search" />
             <span>Talent</span>
           </div>
-          <span>Log in</span>
+          <Link to="/login"> <span>Log in</span> </Link>
+          
           <button className="rounded-full bg-green-600 px-5 py-2 text-white">
             <Link to="/signup">Sign up</Link>
           </button>
         </div>
       </div>
       <NavFindTalent
-        display={display}
+        findTalent={findTalent}
         onMouse={handleOnMouseOver}
         mouseLeave={handleOnMouseLeave}
       />
       <NavFindWork />
-      <WhyUpwork />
+      <WhyUpwork whyUpwork={whyUpwork}
+        onMouse1={handleOnMouseOverWhyUpwork}
+        mouseLeave1={handleOnMouseLeaveWhyUpwork}/>
     </>
   );
 }
