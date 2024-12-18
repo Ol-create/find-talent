@@ -3,12 +3,9 @@ import React from 'react'
 export default function WhyUpwork({whyUpwork, onMouse1, mouseLeave1}) {
   let classes = 'hidden';
   if (whyUpwork) {
-    classes = 'flex justify-between pt-20 px-16 shadow-md pb-7'
+    classes = 'fixed top-16 z-30 w-full bg-white flex justify-between pt-20 px-16 shadow-md pb-7 border-0 border-t border-t-gray-300'
   }
-  console.log(classes)
   return (
-    
-    
     <div className={classes} onMouseEnter={onMouse1} onMouseLeave={mouseLeave1}>
       <div className='grid grid-cols-2 gap-1'>
       <div>

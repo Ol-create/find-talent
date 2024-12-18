@@ -11,17 +11,17 @@ export default function Login() {
           Upwork
         </a>
         <div className="pr-5 pt-2 space-x-4 flex">
-          <p className="hidden lg:block">Looking for work?</p>
-          <a href="/" className="text-green-700 hidden lg:block">
-            Apply as talent
-          </a>
           <a href="/log-in" className="pt-5 lg:hidden text-green-700">
             Log in
           </a>
         </div>
       </div>
-      <div className="border border-red-400 w-[60%] min-h-fit mx-auto">
-        <h1 className="text-4xl text-center">Sign up to hire talent</h1>
+      <div className="border lg:w-[40%] px-10 min-h-fit mx-auto py-10">
+        <h1 className="text-4xl text-center">Log in to Upwork</h1>
+        <div className='border-2 mt-6'>
+          <input type="text"  className='border outline-none'placeholder='Username or Email'/>
+          </div>
+          <button className='rounded-md bg-green-600 w-full py-2'>Continue</button>
         <div className="border min-h-10 my-3 mx-7 rounded-full border-gray-400 flex justify-center items-center">
           <img src={apple} alt="apple logo" className="w-12 h-auto mr-3" />
           <p>Continue with Apple</p>
@@ -39,20 +39,12 @@ export default function Login() {
           <p className="mx-2">or</p>
           <hr className="my-4 border-t-2 w-[45%] border-gray-300 block" />
         </div>
-        {/*  START: Name fields (first & last) */}
-        <div className="mb-4 lg:space-x-4 mx-6 lg:mx-0 space-y-4 lg:space-y-0 lg:flex justify-center  items-center bg-red-500">
-          <input
-            type="text"
-            placeholder="First name"
-            className="block border border-gray-200 focus:outline-gray-300 rounded-lg w-full lg:w-[45%] h-9 pl-5"
-          />
-          <input
-            type="text"
-            placeholder="Last name"
-            className=" block border border-gray-200 focus:outline-gray-300 rounded-lg w-full lg:w-[45%] h-9 pl-5"
-          />
+        
+        <div className="m-6 flex  justify-center items-center my-28">
+          <hr className="my-4 border-t-2 w-16 border-gray-300 block" />
+          <p className="mx-2">Don't have an Upwork account?</p>
+          <hr className="my-4 border-t-2 w-16 border-gray-300 block" />
         </div>
-        {/* END: Name fields (first & last) */}
 
         {/* Email address input */}
         <input

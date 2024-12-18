@@ -6,10 +6,11 @@ import NavBar from "./components/NavBar";
 import Signup from "./components/SignUp"; 
 import Register from "./components/Register";
 import Enterprise from "./components/Enterprise";
+import Test from './test'
 
 function App() {
   const location = useLocation()
-  const hideInLocation = ["/signup", "/register"]
+  const hideInLocation = ["/signup", "/login", "/register"]
 
   const hideNavBar = hideInLocation.includes(location.pathname)
   return (
@@ -23,7 +24,7 @@ function App() {
         <Route path="/enterprise" element={<Enterprise />} />
       </Routes>
     </div>
-  );
+  )
 }
 
 export default App

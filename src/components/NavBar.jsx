@@ -30,7 +30,7 @@ export default function NavBar() {
   }
   return (
     <>
-      <div className="flex justify-between px-3 pt-3  border-b border-gray-300 ">
+      <div className=" fixed top-0 bg-white w-full flex justify-between px-3 pt-3  border-b border-gray-300 z-30">
         <div>
           <ul className="flex space-x-4 items-center h-full pr-3 pt-2">
             <li className="text-green-600 h-full">

@@ -10,9 +10,9 @@ import seo from '../images/seo.webp'
 export default function NavFindTalent({findTalent, onMouse, mouseLeave}) {
     let classes = "space-x-32 p-8 hidden z-20";
     if (findTalent) {
-        classes = "flex space-x-16 p-8 border-x-2 rounded-md border-green z-20";
+        classes = "fixed  top-16 z-30 bg-white shadow-md flex space-x-16 p-8 border-0 border-t border-t-gray-300";
     }
-    console.log(classes)
+
   return (
     <div class={classes} onMouseEnter={onMouse} onMouseLeave={mouseLeave}>
       <div className=" border-r border-gray-400 pr-10 w-96">

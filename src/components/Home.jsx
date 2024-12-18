@@ -11,7 +11,7 @@ import searchTalent from "../images/searching-talent.webp"
 
 export default function Home() {
   return (
-    <div className="contain mx-auto px-9">
+    <div className="contain mx-auto px-9 mt-28">
       <div className='grid grid-cols-1 min-[717px]:grid-cols-2 mt-16 mb-6 h-[320px]'>
         <div>
         <h1 className='text-5xl sm:text-7xl text-black font-semibold'>Highly skilled <br />
@@ -54,7 +54,7 @@ export default function Home() {
         <span className="material-symbols-outlined text-gray-500 ">
                  edit_square
           </span>
-          <div className='bottom-1 relative'>
+          <div className=''>
             <h3 className='text-lg font-medium'>No cost to join</h3>
             <p className="text-xs">
               Register and browse professionals, explore projects, or even book
@@ -66,7 +66,7 @@ export default function Home() {
         <span class="material-symbols-outlined text-gray-500">
           exercise
 </span>
-          <div className='bottom-1 relative'>
+          <div className=''>
             <h3 className='text-lg font-medium'>Post a job and hire top talent</h3>
             <p className='text-[14px]'>
               Finding talent doesn’t have to be a chore. Post a job or we can
