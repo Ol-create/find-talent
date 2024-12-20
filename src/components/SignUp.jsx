@@ -84,7 +84,7 @@ export default function SignUp() {
         </div>
         <div className="flex justify-center mt-2">
           <p>Already have an account?</p>
-          <a href="" className="text-green-600 ml-1">
+          <a href="/login" className="text-green-600 ml-1">
             Log In
           </a>
         </div>
