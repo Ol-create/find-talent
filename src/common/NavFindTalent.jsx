@@ -10,7 +10,7 @@ import seo from '../images/seo.webp'
 export default function NavFindTalent({findTalent, onMouse, mouseLeave}) {
    
   return (
-    <div className={`space-x-32 p-8 ${findTalent ? "flex" : "hidden"} fixed top-16 z-30 bg-white shadow-md border-0 border-t border-t-gray-300 group2`}
+    <div className={`space-x-6 p-8 w-full ${findTalent ? "flex" : "hidden"} fixed top-16 z-30 bg-white shadow-md border-0 border-t border-t-gray-300`}
     onMouseEnter={onMouse}
     onMouseLeave={mouseLeave}>
       <div className=" border-r border-gray-400 pr-10 w-96">
@@ -24,8 +24,9 @@ export default function NavFindTalent({findTalent, onMouse, mouseLeave}) {
     chevron_right
   </span>
 </div>
+  </a>
 
-        </a>
+
         <a className='mb-3' href="">
           <div className="hover:bg-gray-200 rounded-lg pl-3 py-3 flex flex-row items-center">
             <p className="flex-1">
@@ -37,13 +38,14 @@ export default function NavFindTalent({findTalent, onMouse, mouseLeave}) {
             </span>
           </div>
         </a>
+
         <a className='mb-3' href="">
           <div className="hover:bg-gray-200 rounded-lg pl-3 py-3 flex flex-row items-center">
             <p className="flex-1">
               Get advice from industrial expert <br />
               <span className="text-green-700">Consultation</span>
             </p>
-            <span class="material-icons absolute right-5 top-9 text-green-700">
+            <span class="material-icons mr-3 text-green-600">
               chevron_right
             </span>
           </div>
@@ -63,7 +65,7 @@ export default function NavFindTalent({findTalent, onMouse, mouseLeave}) {
           </a>
         </div>
         {/* Images columns */}
-        <div className="grid grid-cols-3 gap-y-3 gap-x-4 mt-14">
+        <div className="grid grid-cols-3 gap-y-3 gap-x-4 mt-14 pl-5">
           <div className="rounded-md border border-gray-300 overflow-hidden sm:w-40 sm:h-40 ">
             <img src={logo} alt="logo" className="sm:h-24 w-full" />
             <p className="p-5 text-center ">Logo Design</p>
