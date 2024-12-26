@@ -17,7 +17,7 @@ export default function Login() {
           </a>
         </div>
       </div>
-      <div className="border lg:w-[40%] px-20 min-h-fit mx-auto py-10 rounded-xl my-7">
+      <div className="border md:w-[520px] px-20 min-h-fit mx-auto py-10 rounded-xl my-16">
         <h1 className="text-4xl text-center">Log in to Upwork</h1>
         <div className='border-2 mt-6 rounded-[10px] flex'>
         <img src={apple} alt="apple logo" className="w-12 h-auto" />
@@ -31,12 +31,7 @@ export default function Login() {
           <hr className="my-4 border-t-2 w-[45%] border-gray-300 block" />
           </div>
 
-        <div className="border min-h-10 my-3 rounded-full border-gray-400 flex justify-center items-center">
-          <img src={apple} alt="apple logo" className="w-12 h-auto mr-1" />
-          <p>Continue with Apple</p>
-        </div>
-
-        <div className="border text-white bg-blue-500 min-h-10 my-3 rounded-[10px] h-10 border-gray-400 relative flex justify-center items-center mt-5">
+          <div className="border text-white bg-blue-500 min-h-10 my-3 rounded-[10px] h-10 border-gray-400 relative flex justify-center items-center">
           <img
             src={google}
             alt="google logo"
@@ -44,8 +39,12 @@ export default function Login() {
           />
           <p>Continue with Google</p>
         </div>
-        
-        
+
+        <div className="border min-h-10 mt-5 rounded-[10px] h-10 border-gray-400 flex justify-center items-center">
+          <img src={apple} alt="apple logo" className="w-12 h-auto mr-1" />
+          <p>Continue with Apple</p>
+        </div>
+    
           <div className=" flex w-full justify-center items-center mt-28">
           <hr className="my-4 border-t-2 w-10 border-gray-300 block" />
           <p className="mx-2 text-gray-300">Don't have an Upwork account?</p>

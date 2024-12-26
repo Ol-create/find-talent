@@ -8,13 +8,11 @@ import video_editing from '../images/videoedit.jpg';
 import seo from '../images/seo.webp'
 
 export default function NavFindTalent({findTalent, onMouse, mouseLeave}) {
-    let classes = "space-x-32 p-8 hidden z-20";
-    if (findTalent) {
-        classes = "fixed  top-16 z-30 bg-white shadow-md flex space-x-16 p-8 border-0 border-t border-t-gray-300";
-    }
-
+   
   return (
-    <div class={classes} onMouseEnter={onMouse} onMouseLeave={mouseLeave}>
+    <div className={`space-x-32 p-8 ${findTalent ? "flex" : "hidden"} fixed top-16 z-30 bg-white shadow-md border-0 border-t border-t-gray-300 group2`}
+    onMouseEnter={onMouse}
+    onMouseLeave={mouseLeave}>
       <div className=" border-r border-gray-400 pr-10 w-96">
         <a className='mb-3' href="">
           <div className="hover:bg-gray-200 rounded-lg pl-3 py-3  flex flex-row items-center">
