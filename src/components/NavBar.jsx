@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 import NavFindTalent from "../common/NavFindTalent";
 import NavFindWork from "../common/NavFindWork";
 import WhyUpwork from "../common/WhyUpwork";
+import WhatsNew from "../common/WhatsNew";
+import SubNavBar from "../common/SubNavBar";
 
 export default function NavBar() {
   const [findTalent, setFindTalent] = useState(false);
+  const [isFindWork, setFindWork] = useState(false);
   const [whyUpwork, setWhyUpwork] = useState(false);
+  const [isWhatsNew, setWhatsNew] = useState(false);
 
   const handleOnMouseOver = () => {
     setFindTalent(true);
@@ -16,12 +21,26 @@ export default function NavBar() {
     setFindTalent(false);
   };
 
+  const handleOnMouseOverFindWork = () => {
+    setFindWork(true);
+  };
+
+  const handleOnMouseLeaveFindWork = () => {
+    setFindWork(false);
+  };
   const handleOnMouseOverWhyUpwork = () => {
     setWhyUpwork(true);
   };
 
   const handleOnMouseLeaveWhyUpwork = () => {
     setWhyUpwork(false);
+  };
+  const handleOnMouseOverWhatsNew = () => {
+    setWhatsNew(true);
+  };
+
+  const handleOnMouseLeaveWhatsNew = () => {
+    setWhatsNew(false);
   };
 
   return (
@@ -46,9 +65,22 @@ export default function NavBar() {
                 }`}
               />
             </li>
-            <li className="hover:text-green-600 hover:cursor-pointer h-full flex">
-              Find Work <span className="material-icons ">expand_more</span>
+
+            <li
+              className="hover:text-green-600 hover:cursor-pointer h-full flex group1"
+              onMouseEnter={handleOnMouseOverFindWork}
+              onMouseLeave={handleOnMouseLeaveFindWork}
+            >
+              <p>Find Work</p>
+              <img
+                src="/images/keyboard-arrow-down.png"
+                alt=""
+                className={`material-symbols-outlined relative top-1 w-5 h-5 transform transition-transform duration-100 ${
+                  isFindWork ? "rotate-180" : ""
+                }`}
+              />
             </li>
+            
             <li
               className="hover:text-green-600 hover:cursor-pointer h-full flex"
               onMouseEnter={handleOnMouseOverWhyUpwork}
@@ -62,8 +94,24 @@ export default function NavBar() {
                 }`}
               />
             </li>
+            <li
+              className="hover:text-green-600 hover:cursor-pointer h-full flex"
+              onMouseEnter={handleOnMouseOverWhatsNew}
+              onMouseLeave={handleOnMouseLeaveWhatsNew}
+            >
+              <p>What's new</p> <img
+                src="/images/keyboard-arrow-down.png"
+                alt=""
+                className={`material-symbols-outlined relative top-1 w-5 h-5 transform transition-transform duration-100 ${
+                  isWhatsNew ? "rotate-180" : ""
+                }`}
+              />
+            </li>
             <li className="h-full hover:text-green-600">
               <Link to="/enterprise">Enterprise</Link>
+            </li>
+            <li className="h-full hover:text-green-600">
+              <Link to="/pricing">Pricing</Link>
             </li>
           </ul>
         </div>
@@ -86,12 +134,22 @@ export default function NavBar() {
         onMouse={handleOnMouseOver}
         mouseLeave={handleOnMouseLeave}
       />
-      <NavFindWork />
+      <NavFindWork
+        isFindWork={isFindWork}
+        onMouseEnter={handleOnMouseOverFindWork}
+        onMouseLeave={handleOnMouseLeaveFindWork}
+      />
       <WhyUpwork
         whyUpwork={whyUpwork}
         onMouse1={handleOnMouseOverWhyUpwork}
         mouseLeave1={handleOnMouseLeaveWhyUpwork}
       />
+      <WhatsNew
+        isWhatsNew={isWhatsNew}
+        onMouseEnter={handleOnMouseOverWhatsNew}
+        onMouseLeave={handleOnMouseLeaveWhatsNew}
+      />
+      <SubNavBar />
     </>
   );
 }

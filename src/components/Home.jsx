@@ -11,14 +11,12 @@ import searchTalent from "../images/searching-talent.webp"
 
 export default function Home() {
   return (
-    <div className="contain mx-auto px-9 mt-28">
+    <div className="contain mx-auto px-9 mt-32">
       <div className='grid grid-cols-1 min-[717px]:grid-cols-2 mt-16 mb-6 h-[320px]'>
         <div>
-        <h1 className='text-5xl sm:text-7xl text-black font-semibold'>Highly skilled <br />
-      AI pros</h1>
-      <h3 className='text-gray-500 text-xl font-semibold my-4'>
-      Unleash your business potential <br />
-      by hiring the right expert for your need.
+        <h1 className='text-5xl sm:text-7xl text-black font-semibold'> How work <br /> should work </h1>
+      <h3 className='text-gray-500 text-xl font-semibold my-4 w-[500px]'>
+           Forget the old rules. You can have the best people. Right now. Right here. 
       </h3>
           <button
             className="rounded-xl py-5 px-6 justify-center text-center font-medium items-center inline-flex  h-9 bg-green-700 hover:bg-green-600 text-white cursor-pointer"
