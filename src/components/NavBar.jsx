@@ -116,15 +116,28 @@ export default function NavBar() {
           </ul>
         </div>
         <div className="flex space-x-5 items-center pb-3">
-          <div className="border-solid border-2 border-gray-700 rounded-full py-2 px-8">
-            <input className="outline-none" type="text" placeholder="Search" />
-            <span>Talent</span>
+          <div className="relative flex border-2 border-gray-200 hover:bg-gray-200 rounded-full px-8 h-10 w-80 ">
+          {/*  */}
+              <img src="/images/search_icon.png" 
+                   alt="search"
+                   className="w-6 h-6 ml-2 absolute left-0 top-[7px] z-10" />
+              <input className="absolute left-0 outline-none rounded-full border-l-0  pl-10 pr-3 h-9 w-4/6 hover:bg-gray-100 focus:bg-white" 
+                     type="text" 
+                     placeholder="Search" />
+            <div className="hover:bg-gray-100 absolute right-0 h-9 rounded-full w-2/6 text-center items-center flex justify-center">
+            <p>Talent</p>
+             <img
+                src="/images/keyboard-arrow-down.png"
+                alt=""
+                className="material-symbols-outlined relative top-[2px] w-5 h-5 transform transition-transform duration-100 "
+              />
+              </div>
           </div>
           <Link to="/login">
             {" "}
             <span>Log in</span>{" "}
           </Link>
-          <button className="rounded-full bg-green-600 px-5 py-2 text-white">
+          <button className="rounded-lg bg-green-600 px-5 py-2 text-white">
             <Link to="/signup">Sign up</Link>
           </button>
         </div>
