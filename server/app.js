@@ -7,9 +7,9 @@ const cookieParser = require('cookie-parser');
 const app = express();
 const PORT = 5000;
 
-// Enable CORS for requests from http://localhost:3000
+// Enable CORS for requests from https://find-talent.onrender.com
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://find-talent.onrender.com',
     credentials: true, // Allow cookies and credentials
   }));
 
@@ -17,7 +17,7 @@ app.use(cors({
 const client = new OAuth2Client({
   clientId: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  redirectUri: 'http://localhost:5000/auth/google/callback',
+  redirectUri: 'https://find-talent.onrender.com/auth/google/callback',
 });
 
 // Middleware
@@ -64,7 +64,7 @@ app.get('/auth/google/callback', async (req, res) => {
 
     // Redirect to frontend with user data
     const userData = encodeURIComponent(JSON.stringify(user));
-    res.redirect(`http://localhost:3000/user?user=${userData}`);
+    res.redirect(`https://find-talent.onrender.com/user?user=${userData}`);
   } catch (err) {
     console.error('Error during Google OAuth', err);
     res.status(500).send('Authentication failed');
@@ -84,5 +84,5 @@ app.get('/logout', (req, res) => {
 
 // Start Server
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on: ${PORT}`);
 });
