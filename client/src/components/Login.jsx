@@ -5,6 +5,9 @@ import google from "../images/google-icon.png";
 import visible_off from "../images/visibility_off.png"
 
 export default function Login() {
+  const handleLogin = () => {
+    window.location.href = 'http://localhost:5000/auth/google';
+  };
   return (
     <div>
       <div className="flex justify-between">
@@ -31,7 +34,9 @@ export default function Login() {
           <hr className="my-4 border-t-2 w-[45%] border-gray-300 block" />
           </div>
 
-          <div className="border text-white bg-blue-500 min-h-10 my-3 rounded-[10px] h-10 border-gray-400 relative flex justify-center items-center">
+          <div 
+             className="border text-white bg-blue-500 min-h-10 my-3 rounded-[10px] h-10 border-gray-400 relative flex justify-center items-center"
+             onClick={handleLogin}>
           <img
             src={google}
             alt="google logo"
