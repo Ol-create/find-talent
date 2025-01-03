@@ -6,7 +6,7 @@ import visible_off from "../images/visibility_off.png"
 
 export default function Login() {
   const handleLogin = () => {
-    window.location.href = 'http://localhost:5000/auth/google';
+    window.location.href = 'https://find-talent.onrender.com/auth/google';
   };
   return (
     <div>
