@@ -13,7 +13,7 @@ const Dashboard = () => {
 
   const handleLogout = async () => {
     try {
-      await fetch('https://find-talent.onrender.com/logout', {
+      await fetch('https://find-talent-backend.onrender.com/logout', {
         method: 'GET',
         credentials: 'include', // Ensures cookies are sent with the request
       });
